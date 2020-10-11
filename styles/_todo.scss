@@ -1,0 +1,44 @@
+.todo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.todo-list {
+  min-width: 30vw;
+  list-style: none;
+}
+
+.todo {
+  margin: 0.5rem;
+  background: white;
+  color: black;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  li {
+    flex: 1;
+  }
+}
+
+.todo-item {
+  padding: 0rem 1rem;
+}
+
+.complete-btn,
+.remove-btn {
+  background-color: $btn-color;
+  color: white;
+  padding: 1rem;
+  font-size: 1rem;
+}
+
+.complete-btn {
+  background: rgb(56, 196, 56);
+
+  &:hover {
+    background: rgb(115, 255, 115);
+  }
+}

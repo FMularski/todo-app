@@ -50,4 +50,63 @@ button:hover {
   background: #d88771;
   color: white;
 }
+
+.todo-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.todo-list {
+  min-width: 30vw;
+  list-style: none;
+}
+
+.todo {
+  margin: 0.5rem;
+  background: white;
+  color: black;
+  font-size: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.todo li {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.todo-item {
+  padding: 0rem 1rem;
+}
+
+.complete-btn,
+.remove-btn {
+  background-color: #ff6f47;
+  color: white;
+  padding: 1rem;
+  font-size: 1rem;
+}
+
+.complete-btn {
+  background: #38c438;
+}
+
+.complete-btn:hover {
+  background: #73ff73;
+}
 /*# sourceMappingURL=style.css.map */

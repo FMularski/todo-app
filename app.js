@@ -6,13 +6,14 @@ todoButton.addEventListener('click', addTodo);
 
 function addTodo(event){
     event.preventDefault();
-    
+
     const todoDiv = document.createElement('div');
     todoDiv.classList.add('todo');
 
     const listItem = document.createElement('li');
     listItem.classList.add('todo-item');
-    listItem.innerText = 'new';
+    listItem.innerText = todoInput.value;
+    todoInput.value = "";
     todoDiv.appendChild(listItem);
 
     const completedButton = document.createElement('button');

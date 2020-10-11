@@ -1,0 +1,47 @@
+$main-color-1: #e2c35d;
+$main-color-2: #d88771;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(120deg, $main-color-1, $main-color-2);
+  color: white;
+  min-height: 100vh;
+}
+
+header {
+  font-size: 1.5rem;
+}
+
+header,
+form {
+  min-height: 20vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+input,
+button {
+  padding: 0.5rem;
+  font-size: 2rem;
+  border: none;
+  background: white;
+}
+
+button {
+  color: $main-color-2;
+  background: white;
+  cursor: pointer;
+  transition: all 0.5s ease;
+
+  &:hover {
+    background: $main-color-2;
+    color: white;
+  }
+}

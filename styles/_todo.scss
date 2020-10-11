@@ -17,6 +17,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  transition: all 0.5s ease;
 
   li {
     flex: 1;
@@ -25,6 +26,7 @@
 
 .todo-item {
   padding: 0rem 1rem;
+  transition: all 0.5s ease;
 }
 
 .complete-btn,
@@ -41,4 +43,27 @@
   &:hover {
     background: rgb(115, 255, 115);
   }
+}
+
+.fa-trash,
+.fa-check {
+  pointer-events: none;
+}
+
+.completed {
+  background-color: rgb(115, 255, 115);
+  text-decoration: line-through;
+}
+
+button.completed {
+  background: gray;
+
+  &:hover {
+    background: rgb(209, 209, 209);
+  }
+}
+
+.fall {
+  transform: translateY(8rem) rotateZ(20deg);
+  opacity: 0;
 }

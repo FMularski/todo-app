@@ -3,6 +3,7 @@ const todoButton = document.querySelector('.todo-button');
 const todoList = document.querySelector('.todo-list');
 
 todoButton.addEventListener('click', addTodo);
+todoList.addEventListener('click', completeRemove);
 
 function addTodo(event){
     event.preventDefault();
@@ -27,4 +28,21 @@ function addTodo(event){
     todoDiv.appendChild(removeButton);
 
     todoList.appendChild(todoDiv);
+}
+
+function completeRemove(event){
+    const clickedBtn = event.target;
+    const parent = clickedBtn.parentElement;
+
+    if (clickedBtn.classList[0] === 'remove-btn'){
+        parent.classList.add('fall');
+        parent.addEventListener('transitionend', () =>{
+            parent.remove();
+        })
+    }
+
+    if (clickedBtn.classList[0] === 'complete-btn'){
+        parent.classList.toggle('completed');
+        clickedBtn.classList.toggle('completed');
+    }
 }

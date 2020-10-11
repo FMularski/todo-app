@@ -82,6 +82,8 @@ button:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 .todo li {
@@ -92,6 +94,8 @@ button:hover {
 
 .todo-item {
   padding: 0rem 1rem;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 .complete-btn,
@@ -108,5 +112,29 @@ button:hover {
 
 .complete-btn:hover {
   background: #73ff73;
+}
+
+.fa-trash,
+.fa-check {
+  pointer-events: none;
+}
+
+.completed {
+  background-color: #73ff73;
+  text-decoration: line-through;
+}
+
+button.completed {
+  background: gray;
+}
+
+button.completed:hover {
+  background: #d1d1d1;
+}
+
+.fall {
+  -webkit-transform: translateY(8rem) rotateZ(20deg);
+          transform: translateY(8rem) rotateZ(20deg);
+  opacity: 0;
 }
 /*# sourceMappingURL=style.css.map */
